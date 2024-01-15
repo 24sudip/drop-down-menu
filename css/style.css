@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+ul{
+    list-style: none;
+}
+.main{
+    text-align: center;
+    background-color: tomato;
+}
+.main ul li{
+    display: inline-block;
+    position: relative;
+    margin: 0 -2px;
+}
+.main ul li a{
+    padding: 20px 30px;
+    font-size: 20px;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    transition: 0.4s;
+    display: block;
+}
+.main ul li a:hover{
+    background-color: pink;
+    color: #222;
+}
+.main ul li ul{
+    position: absolute;
+    background-color: gray;
+    width: 250px;
+    left: -60px;
+    display: none;
+}
+.main ul li:hover > ul{
+    display: block;
+}
+.main ul li ul li{
+    width: 100%;
+}
+.main ul li ul li ul{
+    position: absolute;
+    left: 100%;
+    top: 0;
+}
+.main ul li ul li ul li a{
+    background-color: blue;
+    color: yellow;
+}
+.main ul li ul li ul li a:hover{
+    background-color: yellow;
+    color: blue;
+}
+.main ul li ul li ul li ul li a{
+    background-color: red;
+    color: green;
+}
+.main ul li ul li ul li ul li a:hover{
+    background-color: green;
+    color: red;
+}
